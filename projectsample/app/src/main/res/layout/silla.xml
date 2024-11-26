@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/sillatitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:text="통일신라" />
+
+        <TextView
+            android:id="@+id/sillatitle1"
+            android:paddingBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. 삼국통일을 이루어낸 문무왕" />
+
+        <ImageView
+            android:id="@+id/sillaimg1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:paddingBottom="8dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+
+        <TextView
+            android:paddingBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="옛날 신라는 백제와 고구려를 물리치고, 삼국을 하나로 통일하기 위해 노력했어요. 신라는 먼저 당나라와 손잡고 백제를 무너뜨린 뒤, 고구려까지 이겼죠. 하지만 당나라가 신라 땅을 차지하려 하자, 신라는 문무왕의 지휘 아래 나당전쟁을 벌여 당나라를 몰아내고 676년에 진정한 삼국 통일을 이뤘어요." />
+
+        <TextView
+            android:paddingBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="문무왕은 통일을 완성한 뒤 나라를 안정시키고, 외적의 침입을 막기 위해 노력했어요. 그는 &quot;죽어서도 나라를 지키겠다&quot;고 말하며, 자신의 유해를 동해의 대왕암에 묻게 했답니다. 삼국 통일을 이끈 문무왕은 나라를 위해 헌신한 왕으로 기억되고 있어요." />
+
+
+        <TextView
+            android:paddingBottom="8dp"
+            android:id="@+id/sillatitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.넓어진 신라를 다스린 지혜, 9주 5소경" />
+
+        <ImageView
+            android:paddingBottom="8dp"
+            android:id="@+id/sillaimg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:paddingBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="삼국 통일 이후, 신라는 넓어진 영토를 잘 관리하기 위해 9주 5소경 제도를 만들었어요. 먼저 나라를 9개의 큰 행정 구역(9주)으로 나누고, 각 지역에 관리들을 배치해 효율적으로 다스렸죠. 이렇게 함으로써 지방 세력을 약하게 하고,중앙 정부가 더 강한 힘을 가질 수 있게 되었어요." />
+
+        <TextView
+            android:paddingBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="또한, 신라는 수도 경주와 멀리 떨어진 지방 사람들이 편리하게 살 수 있도록 5소경이라는 중요한 도시들을세웠어요. 5소경은 지방 문화를 발전시키고, 수도와의 연결을 도와주는 역할을 했답니다. 이 제도 덕분에 신라는 전국을 균형 있게 발전시키며 안정된 나라를 만들 수 있었어요." />
+
+        <TextView
+            android:paddingBottom="8dp"
+            android:id="@+id/sillatitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.불교 문화의 황금기" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/sillaimg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/sillaimg4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/avatars" />
+        </LinearLayout>
+
+        <!-- 두 번째 줄 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/sillaimg5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/sillaimg6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/avatars" />
+        </LinearLayout>
+
+        <TextView
+            android:paddingBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="통일 신라 시대는 불교 문화의 황금기로, 많은 아름다운 문화재가 만들어졌어요. 대표적으로 불국사와 석굴암이 있어요. 불국사는 불교의 이상 세계를 표현한 절로, 아름다운 돌 계단과 섬세한 건축물로 유명해요. 석굴암은 돌로 만든 동굴 안에 부처님을 모신 불상으로, 신라 사람들의 뛰어난 기술과 불교 신앙을 보여주는 세계적인 문화유산이에요. 두 곳 모두 지금도 많은 사람들이 방문하며 감탄하는 장소랍니다." />
+        <TextView
+            android:paddingBottom="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="또한, 신라의 과학적 지식과 불교적 사상이 합쳐진 첨성대도 있어요. 하늘의 별자리를 관찰하기 위해 만든 이 건축물은 현존하는 가장 오래된 천문대예요. 이 외에도 불교 탑인 다보탑과 석가탑은 섬세한 조각과 독특한 디자인으로 신라 불교 예술의 정수를 보여줘요. 이런 문화재들은신라가 불교를 중심으로 한 찬란한 문화를 꽃피운 시기였음을 잘 알려준답니다." />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="메인으로 돌아가기" />
+
+
+    </LinearLayout>
+</ScrollView>
