@@ -2,9 +2,10 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    >
 
     <LinearLayout
+        android:background="#EEECE8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -12,23 +13,27 @@
 
         <!-- 섹션: 해방과 광복 -->
         <TextView
-            android:id="@+id/section_title"
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="해방과 광복 (1945)"
-            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="해방과 광복(1945)"
             android:textStyle="bold"
-            android:paddingBottom="8dp" />
+            android:textColor="#000000"
+            android:textSize='30dp' />
 
         <!-- 배경 -->
         <TextView
-            android:id="@+id/background_title"
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:text="배경"
-            android:textSize="22sp"
             android:textStyle="bold"
-            android:paddingBottom="4dp" />
+            android:textColor="#000000"
+            android:textSize='30dp' />
 
         <TextView
             android:id="@+id/ww2_content"
@@ -47,13 +52,15 @@
             android:src="@drawable/gwangbok" />
 
         <TextView
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:text="1945년 8월 15일 광복"
-            android:gravity="center"
-            android:textSize="14sp"
-            android:paddingTop="4dp"
-            android:paddingBottom="16dp" />
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
 
         <!-- 광복의 의미 -->
         <TextView
@@ -97,13 +104,13 @@
             android:layout_height="32dp" />
 
         <Button
-            android:id="@id/button"
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="메인으로 돌아가기"
             android:layout_gravity="center"
             android:padding="12dp"
-            android:textColor="#FFFFFF" />
+            android:textColor="#272626" />
 
     </LinearLayout>
 </ScrollView>

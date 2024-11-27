@@ -1,15 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
-
-    <Button
-        android:id="@id/button"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="메인으로 돌아가기"
-        android:layout_gravity="center"
-        android:padding="12dp"
-        android:textColor="#FFFFFF" />
-</LinearLayout>
+        android:background="#EEECE8"
+        android:orientation="vertical">
+
+        <!-- 고려가 시작된 이야기 -->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="고려가 시작된 이야기"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고려는 918년에 왕건이 세운 나라입니다. 고려는 후삼국을 통일하여 평등과 화합을 중요시한 나라였습니다. 수도는 개경으로 정해졌으며, 고려는 외국에서도 Korea로 널리 알려졌습니다."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- 고려 지도 이미지 -->
+        <ImageView
+            android:id="@+id/cultural_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/korea1" />
+
+        <!-- 고려의 자랑거리 -->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="고려의 자랑거리"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="고려시대에는 팔만대장경과 고려청자가 유명합니다. 팔만대장경은 불교 경전을 새긴 목판으로, 몽골의 침략을 막기 위해 만들어졌습니다. 고려청자는 세계적으로 아름다움을 인정받은 도자기입니다."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/korea2" />
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/korea3" />
+        </LinearLayout>
+
+        <!-- 고려의 어려움 -->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="고려의 어려움"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="고려는 몽골의 침략으로 어려움을 겪었습니다. 강화도로 임시 수도를 옮기며 나라를 지키기 위해 노력했으며, 많은 전쟁 끝에 몽골과 강화를 맺고 평화를 유지했습니다."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- 몽골 침략 경로 이미지 -->
+        <ImageView
+
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/korea4" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메인으로 돌아가기"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:textColor="#272626" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+

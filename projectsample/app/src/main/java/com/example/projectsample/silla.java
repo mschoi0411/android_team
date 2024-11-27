@@ -36,22 +36,11 @@ public class silla extends AppCompatActivity {
         ImageView sillaimgview6 = findViewById(R.id.sillaimg6);
         sillaimgview6.setImageResource(R.drawable.silla6);
 
-        // 대제목 설정
-        TextView sillatitle = findViewById(R.id.sillatitle);
-        sillatitle.setTextSize(30);
-        sillatitle.setTypeface(null, Typeface.BOLD);
 
-        // 소제목 설정
-        TextView sillatitle1 = findViewById(R.id.sillatitle1);
-        TextView sillatitle2 = findViewById(R.id.sillatitle2);
-        TextView sillatitle3 = findViewById(R.id.sillatitle3);
 
-        sillatitle1.setTextSize(22);
-        sillatitle1.setTypeface(null, Typeface.BOLD);
-        sillatitle2.setTextSize(22);
-        sillatitle2.setTypeface(null, Typeface.BOLD);
-        sillatitle3.setTextSize(22);
-        sillatitle3.setTypeface(null, Typeface.BOLD);
+
+
+
 
         Button button = findViewById(R.id.button);
 

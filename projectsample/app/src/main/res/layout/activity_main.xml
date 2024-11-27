@@ -1,24 +1,34 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
 
-    android:background="#F8F5E5">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background3"
+
+    >
+
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#F8F5E5">
+        android:background="@drawable/background3"
+        >
+
+
+
 
         <TextView
             android:id="@+id/appName"
             android:layout_width="250dp"
             android:layout_height="90dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:gravity="center"
             android:padding="8dp"
-            android:text="역사 속으로 쏙...."
-            android:textColor="#2E2A2A"
+            android:text="역사 속으로 쏙 !"
+            android:textStyle="bold"
+            android:textColor="#504B4B"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -33,8 +43,8 @@
             android:layout_marginTop="36dp"
             android:gravity="center"
             android:text="진행률: 0%"
-            android:textColor="#000000"
-            android:textSize="16sp"
+            android:textColor="#5A5858"
+            android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -44,13 +54,13 @@
         <ProgressBar
             android:id="@+id/progressBar"
             android:layout_width="200dp"
-            android:layout_height="20dp"
+            android:layout_height="40dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="16dp"
             android:progress="0"
             android:max="100"
             style="?android:attr/progressBarStyleHorizontal"
-            android:progressTint="#4CAF50"
+            android:progressTint="#494135"
             android:backgroundTint="#D6D6D6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -80,7 +90,7 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#B3E5FC"
+            app:cardBackgroundColor="#A1937E"
             android:elevation="40dp"
             app:cardCornerRadius="15dp">
 
@@ -114,10 +124,10 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:layout_margin="8dp"
-            android:background="#B3E5FC"
+            android:background="#A1937E"
             android:elevation="40dp"
             app:cardCornerRadius="15dp"
-            app:cardBackgroundColor="#B3E5FC">
+            app:cardBackgroundColor="#A1937E">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -149,10 +159,10 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:layout_margin="8dp"
-            android:background="#B3E5FC"
+            android:background="#A1937E"
             android:elevation="40dp"
             app:cardCornerRadius="15dp"
-            app:cardBackgroundColor="#B3E5FC">
+            app:cardBackgroundColor="#A1937E">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -184,10 +194,10 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:layout_margin="8dp"
-            android:background="#B3E5FC"
+            android:background="#A1937E"
             android:elevation="40dp"
             app:cardCornerRadius="15dp"
-            app:cardBackgroundColor="#B3E5FC">
+            app:cardBackgroundColor="#A1937E">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -219,10 +229,10 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:layout_margin="8dp"
-            android:background="#B3E5FC"
+            android:background="#A1937E"
             android:elevation="40dp"
             app:cardCornerRadius="15dp"
-            app:cardBackgroundColor="#B3E5FC">
+            app:cardBackgroundColor="#A1937E">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -254,10 +264,10 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:layout_margin="8dp"
-            android:background="#B3E5FC"
+            android:background="#A1937E"
             android:elevation="40dp"
             app:cardCornerRadius="15dp"
-            app:cardBackgroundColor="#B3E5FC">
+            app:cardBackgroundColor="#A1937E">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -289,10 +299,10 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:layout_margin="8dp"
-            android:background="#B3E5FC"
+            android:background="#A1937E"
             android:elevation="40dp"
             app:cardCornerRadius="15dp"
-            app:cardBackgroundColor="#B3E5FC">
+            app:cardBackgroundColor="#A1937E">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -324,10 +334,10 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:layout_margin="8dp"
-            android:background="#B3E5FC"
+            android:background="#A1937E"
             android:elevation="40dp"
             app:cardCornerRadius="15dp"
-            app:cardBackgroundColor="#B3E5FC">
+            app:cardBackgroundColor="#A1937E">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -359,10 +369,10 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:layout_margin="8dp"
-            android:background="#B3E5FC"
+            android:background="#A1937E"
             android:elevation="40dp"
             app:cardCornerRadius="15dp"
-            app:cardBackgroundColor="#B3E5FC">
+            app:cardBackgroundColor="#A1937E">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -408,9 +418,13 @@
                 android:text="문제 풀기"
                 android:gravity="center"
                 android:textSize="30dp"
-                android:textColor="#FFFFFF"
+                android:textColor="#DDCFCF"
                 android:background="@drawable/roundbackground"/>
         </LinearLayout>
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 </ScrollView>

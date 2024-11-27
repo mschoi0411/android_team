@@ -20,7 +20,7 @@ public class balhae extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(balhae.this, MainActivity.class);
-                intent.putExtra("pageId", "PAGE_4");
+                intent.putExtra("pageId", "PAGE_5");
                 startActivity(intent);
                 finish();
             }

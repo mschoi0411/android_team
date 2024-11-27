@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:background="#FFFFFF"
+                android:background="#EEECE8"
                 android:elevation="10dp"
                 android:gravity="center"
                 android:orientation="vertical"
@@ -103,13 +103,13 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@id/button"
+                    android:id="@+id/button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="메인으로 돌아가기"
                     android:layout_gravity="center"
                     android:padding="12dp"
-                    android:textColor="#FFFFFF" />
+                    android:textColor="#272626" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

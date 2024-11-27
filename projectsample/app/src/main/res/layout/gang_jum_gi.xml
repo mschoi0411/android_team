@@ -2,35 +2,38 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:background="#EEECE8"
         android:gravity="center">
 
 
         <!-- 섹션: 일제강점기 -->
         <TextView
-            android:id="@+id/section_title"
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="일제강점기 (1910~1945)"
-            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="일제강점기(1910~1945)"
             android:textStyle="bold"
-            android:paddingBottom="8dp" />
-
+            android:textColor="#000000"
+            android:textSize='30dp' />
         <!-- 1910년대: 무단통치 -->
         <TextView
-            android:id="@+id/era_1910s_title"
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1910년대: 무단통치"
-            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="1910년대 : 무단통치"
             android:textStyle="bold"
-            android:paddingBottom="4dp" />
-
+            android:textColor="#000000"
+            android:textSize='30dp' />
         <TextView
             android:id="@+id/era_1910s_content"
             android:layout_width="wrap_content"
@@ -41,13 +44,15 @@
 
         <!-- 1920년대: 문화통치 -->
         <TextView
-            android:id="@+id/era_1920s_title"
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1920년대: 문화통치"
-            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="1920년대 : 문화통치"
             android:textStyle="bold"
-            android:paddingBottom="4dp" />
+            android:textColor="#000000"
+            android:textSize='30dp' />
 
         <TextView
             android:id="@+id/era_1920s_content"
@@ -84,13 +89,15 @@
 
         <!-- 1930년대~1945년: 민족말살통치 -->
         <TextView
-            android:id="@+id/era_1930s_title"
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1930년대~1945년: 민족말살통치"
-            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="1930~1945년 : 민족말살정책"
             android:textStyle="bold"
-            android:paddingBottom="4dp" />
+            android:textColor="#000000"
+            android:textSize='30dp' />
 
         <TextView
             android:id="@+id/era_1930s_content"
@@ -123,13 +130,13 @@
             android:layout_height="32dp" />
 
         <Button
-            android:id="@id/button"
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="메인으로 돌아가기"
             android:layout_gravity="center"
             android:padding="12dp"
-            android:textColor="#FFFFFF" />
+            android:textColor="#272626" />
 
     </LinearLayout>
 </ScrollView>

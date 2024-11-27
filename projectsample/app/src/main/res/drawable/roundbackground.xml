@@ -3,5 +3,5 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- 모서리를 둥글게 -->
     <corners android:radius="16dp" /> <!-- CardView처럼 둥근 모서리 -->
-    <solid android:color="#B3E5FC"/>
+    <solid android:color="#A1937E"/>
 </shape>
