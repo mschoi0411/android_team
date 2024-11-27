@@ -35,7 +35,7 @@
         <activity android:name=".threecountry" />
         <activity android:name=".balhae" />
         <activity android:name=".goryeo" />
-        <activity android:name=".joseon" />
+        <activity android:name="joseon" />
     </application>
 
 </manifest>

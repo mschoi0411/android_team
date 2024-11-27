@@ -2,39 +2,62 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:background="#EEECE8"
         android:gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="발해"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
 
         <!-- 발해의 건국 -->
         <TextView
             android:id="@+id/balhae_title"
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1. 발해의 건국"
-            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="발해의 건국"
             android:textStyle="bold"
-            android:paddingBottom="8dp" />
+            android:textColor="#000000"
+            android:textSize='30dp' />
 
-        <ImageView
-            android:id="@+id/balhae_image1"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginBottom="8dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/balhae1" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
 
-        <ImageView
-            android:id="@+id/balhae_image2"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginBottom="8dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/balhae2" />
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/balhae1" />
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:src="@drawable/balhae2"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/balhae_desc"
@@ -46,29 +69,41 @@
 
         <!-- 해동성국 발해 -->
         <TextView
-            android:id="@+id/haedong_title"
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2. 해동성국 발해, 번영의 시대"
-            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="해동성국 발해, 번영의 시대"
             android:textStyle="bold"
-            android:paddingBottom="8dp" />
+            android:textColor="#000000"
+            android:textSize='30dp' />
 
-        <ImageView
-            android:id="@+id/haedong_image1"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginBottom="8dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/balhae3" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
 
-        <ImageView
-            android:id="@+id/haedong_image2"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginBottom="8dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/balhae4" />
+            <ImageView
+                android:id="@+id/seven"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/balhae3" />
+
+            <ImageView
+                android:id="@+id/tomb"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:src="@drawable/balhae4"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+
 
         <TextView
             android:id="@+id/haedong_desc"
@@ -80,18 +115,20 @@
 
         <!-- 발해의 대표적인 문화재 -->
         <TextView
-            android:id="@+id/cultural_title"
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="3. 발해의 대표적인 문화재: 상경 용천부 궁궐터"
-            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="발해의 대표적인 문화재 : 상경 용천부 궁궐터"
             android:textStyle="bold"
-            android:paddingBottom="8dp" />
+            android:textColor="#000000"
+            android:textSize='30dp' />
 
         <ImageView
             android:id="@+id/cultural_image"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_marginBottom="8dp"
             android:scaleType="centerCrop"
             android:src="@drawable/balhae5" />
@@ -102,17 +139,18 @@
             android:layout_height="wrap_content"
             android:lineSpacingExtra="4dp"
             android:text="상경 용천부 궁궐터는 발해의 수도였던 상경 용천부에 위치한 궁궐터입니다. 발해는 당나라의 장안을 본떠 설계했으며, 발해 문화의 번영을 보여주는 대표적인 유적이에요."
-            android:paddingBottom="16dp" />
+            android:paddingBottom="16dp"
+            android:textColor="#000000" />
 
         <!-- 버튼 -->
         <Button
-            android:id="@id/button"
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="메인으로 돌아가기"
             android:layout_gravity="center"
             android:padding="12dp"
-            android:textColor="#FFFFFF" />
+            android:textColor="#272626" />
 
     </LinearLayout>
 </ScrollView>

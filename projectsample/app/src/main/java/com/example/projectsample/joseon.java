@@ -9,7 +9,7 @@ import android.widget.Button;
 public class joseon extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.balhae);
+        setContentView(R.layout.joseon);
         // 버튼 참조
         Button button = findViewById(R.id.button);
 
@@ -19,7 +19,7 @@ public class joseon extends Activity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(joseon.this, MainActivity.class);
-                intent.putExtra("pageId", "PAGE_7");
+                intent.putExtra("pageId", "PAGE_6");
                 startActivity(intent);
                 finish();
             }
