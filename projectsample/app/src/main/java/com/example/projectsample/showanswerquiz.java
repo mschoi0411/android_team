@@ -7,6 +7,6 @@ public class showanswerquiz extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.showanswerquiz);
+        setContentView(R.layout.activity_shortanswer);
     }
 }

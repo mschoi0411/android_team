@@ -13,7 +13,7 @@
         android:id="@+id/mainLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/background3"
+        android:background="#EEECE8"
         >
 
 
@@ -30,6 +30,7 @@
             android:textStyle="bold"
             android:textColor="#504B4B"
             android:textSize="30sp"
+            android:elevation="50dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"

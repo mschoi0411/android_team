@@ -36,6 +36,9 @@
         <activity android:name=".balhae" />
         <activity android:name=".goryeo" />
         <activity android:name="joseon" />
+        <activity android:name=".activity_oxquiz1" />
+        <activity android:name=".activity_shortanswer" />
+        <activity android:name=".multiplechoice" />
     </application>
 
 </manifest>

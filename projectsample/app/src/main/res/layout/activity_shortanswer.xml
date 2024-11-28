@@ -1,0 +1,95 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF9E3"
+    android:padding="16dp">
+
+    <!-- 빈 View -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/appNameCard2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="#A1937E"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/appName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="단답형 주관식"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="#FFFFFF" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- 사진 영역 -->
+    <ImageView
+        android:id="@+id/problem_image2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/samil"
+        android:contentDescription="문제 이미지"
+        android:scaleType="centerCrop"
+        android:background="#D3D3D3"
+        app:layout_constraintTop_toBottomOf="@id/appNameCard2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 문제 텍스트 -->
+    <TextView
+        android:id="@+id/question_text2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="대한민국의 광복 날짜는 19??년 8월 15일입니다. ??에 들어갈 숫자를 적어주세요."
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#EEEEEE"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/problem_image2"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 답변 입력 칸 -->
+    <EditText
+        android:id="@+id/answer_input2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="답을 입력하세요"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/question_text2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- 메인으로 돌아가기 버튼 -->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A1937E"
+        android:text="메인으로 돌아가기"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/answer_input2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
