@@ -1,7 +1,9 @@
 package com.example.projectsample;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.inputmethod.EditorInfo;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,6 +34,14 @@ public class activity_shortanswer extends AppCompatActivity {
                 return true;
             }
             return false;
+        });
+
+        // 메인 화면으로 이동하는 버튼 설정
+        Button mainMenuButton = findViewById(R.id.button);
+        mainMenuButton.setOnClickListener(v -> {
+            Intent intent = new Intent(activity_shortanswer.this, QuizMain.class);
+            startActivity(intent);
+            finish(); // Stage1Activity 종료
         });
     }
 }

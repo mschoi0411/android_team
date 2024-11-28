@@ -60,8 +60,8 @@
     <!-- 보기 버튼: 3성 6부제 -->
     <androidx.cardview.widget.CardView
         android:id="@+id/option1Card3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="317dp"
+        android:layout_height="60dp"
         app:layout_constraintTop_toBottomOf="@id/questionCard3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -36,7 +36,7 @@ public class Stage2Activity extends AppCompatActivity {
         // 메인 화면으로 이동하는 버튼 설정
         Button mainMenuButton = findViewById(R.id.main_button_stage2);
         mainMenuButton.setOnClickListener(v -> {
-            Intent intent = new Intent(Stage2Activity.this, MainActivity.class);
+            Intent intent = new Intent(Stage2Activity.this, QuizMain.class);
             startActivity(intent);
             finish(); // Stage2Activity 종료
         });

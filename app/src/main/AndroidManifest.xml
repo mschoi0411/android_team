@@ -28,7 +28,6 @@
         </activity>
         <activity android:name=".silla" />
         <activity android:name=".gang_jum_gi" />
-        <activity android:name=".showanswerquiz" />
         <activity android:name=".gwang_bok" />
         <activity android:name=".koreanempire" />
         <activity android:name=".gojoseon" />
@@ -36,9 +35,15 @@
         <activity android:name=".balhae" />
         <activity android:name=".goryeo" />
         <activity android:name="joseon" />
-        <activity android:name=".activity_oxquiz1" />
-        <activity android:name=".activity_shortanswer" />
-        <activity android:name=".multiplechoice" />
+        <activity
+            android:name=".activity_oxquiz1"
+            android:exported="true" />
+        <activity
+            android:name=".activity_shortanswer"
+            android:exported="true" />
+        <activity
+            android:name=".multiplechoice"
+            android:exported="true" />
 
         <activity
             android:name=".QuizMain"

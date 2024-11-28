@@ -15,7 +15,7 @@ public class Stage1Activity extends AppCompatActivity {
 
     // 카드 리소스 배열 (짝 포함)
     private static final int[] CARD_IMAGES = {
-            R.drawable.josan3, R.drawable.josan4,
+            R.drawable.balhae1, R.drawable.josan4,
             R.drawable.josan1, R.drawable.josan2
     };
 
@@ -36,7 +36,7 @@ public class Stage1Activity extends AppCompatActivity {
         // 메인 화면으로 이동하는 버튼 설정
         Button mainMenuButton = findViewById(R.id.main_button);
         mainMenuButton.setOnClickListener(v -> {
-            Intent intent = new Intent(Stage1Activity.this, MainActivity.class);
+            Intent intent = new Intent(Stage1Activity.this, QuizMain.class);
             startActivity(intent);
             finish(); // Stage1Activity 종료
         });
@@ -98,8 +98,8 @@ public class Stage1Activity extends AppCompatActivity {
         isFlipping = true;
 
         new Handler().postDelayed(() -> {
-            if (firstCardImage == R.drawable.josan3 && secondCardImage == R.drawable.josan4 ||
-                    firstCardImage == R.drawable.josan4 && secondCardImage == R.drawable.josan3 ||
+            if (firstCardImage == R.drawable.balhae1 && secondCardImage == R.drawable.josan4 ||
+                    firstCardImage == R.drawable.josan4 && secondCardImage == R.drawable.balhae1 ||
                     firstCardImage == R.drawable.josan1 && secondCardImage == R.drawable.josan2 ||
                     firstCardImage == R.drawable.josan2 && secondCardImage == R.drawable.josan1) {
 

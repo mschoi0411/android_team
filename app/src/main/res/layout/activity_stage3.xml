@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF7E0">
+    android:background="#EEECE8">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -121,7 +121,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="메인 화면으로 가기"
-            android:backgroundTint="#FFCC80"
+            android:backgroundTint="#A1937E"
             android:padding="12dp" />
 
     </LinearLayout>

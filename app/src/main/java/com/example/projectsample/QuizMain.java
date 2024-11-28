@@ -30,13 +30,13 @@ public class QuizMain extends AppCompatActivity {
         });
 
         Button startStage3 = findViewById(R.id.quiz_start_stage3);
-        startStage2.setOnClickListener(v -> {
+        startStage3.setOnClickListener(v -> {
             Intent intent = new Intent(QuizMain.this, multiplechoice.class);
             startActivity(intent);
         });
 
         Button startStage4 = findViewById(R.id.quiz_start_stage4);
-        startStage2.setOnClickListener(v -> {
+        startStage4.setOnClickListener(v -> {
             Intent intent = new Intent(QuizMain.this, Stage1Activity.class);
             startActivity(intent);
         });
