@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3">
+
+    <!-- 고정된 뒤로가기 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D3D3D3"
+        android:orientation="vertical"
+        >
+
+        <!-- 앱 이름 -->
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="#EEECE8"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <!--제목-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="고조선"
+                    android:textColor="#000000"
+                    android:textSize='30dp'
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="우리나라 최초의 국가, 고조선"
+                    android:textColor="#000000"
+                    android:textSize='22dp'
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/Gojoseon"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:src="@drawable/egg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="우리나라에는 고조선이라는 최초의 나라가 있었어요.
+                    \n고조선은 아주 오래전에 생겨난 나라로, 사람들이 농사를 짓고 모여 살면서 생겨난 나라예요. 단군왕검이라는 지도자가 고조선을 세웠다고 전해져요. 단군은 제사장을, 왕검은 나라의 정치 지도자를 뜻하는 말이에요. 그래서 고조선은 제사와 정치를 함께 했던 제정일치 사회였다는 것을 알 수 있어요."
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/stoneblade"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/iron" />
+
+                    <ImageView
+                        android:id="@+id/dagger"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/seven" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text=" 고조선 사람들은 비파형 동검과 반달돌칼 같은 도구를 사용했어요. 특히 농사를 지으면서 쓸모 있는 도구들을 만들어 썼답니다. 또, 고조선에는 8조법이라는 법이 있었는데, 이는 사람들을 바르게 살도록 돕는 규칙이었어요. 고조선은 한반도에서 처음 생긴 나라로, 우리나라 역사의 시작을 알리는 중요한 나라예요!"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="메인으로 돌아가기"
+                    android:layout_gravity="center"
+                    android:padding="12dp"
+                    android:textColor="#272626" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</FrameLayout>

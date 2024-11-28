@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#EEECE8"
+        android:gravity="center">
+
+
+        <!-- 섹션: 일제강점기 -->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="일제강점기(1910~1945)"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+        <!-- 1910년대: 무단통치 -->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="1910년대 : 무단통치"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+        <TextView
+            android:id="@+id/era_1910s_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="헌병경찰제 시행: 강압적인 통치로 자유를 억압당했습니다.\n\n토지조사사업: 농민의 토지를 수탈하여 일본인 자본가에게 제공하였습니다."
+            android:textSize="16sp"
+            android:paddingBottom="16dp" />
+
+        <!-- 1920년대: 문화통치 -->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="1920년대 : 문화통치"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+
+        <TextView
+            android:id="@+id/era_1920s_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.1운동(1919년): 독립선언서 발표 및 비폭력 만세운동이 전국으로 확산되면서 일제 통치의 변화를 촉진하였어요."
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/image_march_1st"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/samil" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3.1 운동"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/era_1920s_cultural_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="문화통치 전환: 헌병경찰제를 폐지하고, 언론·출판 일부를 허용하였어요.\n\n산미증식계획: 쌀 생산량 증가를 목표로 했으나 대부분 일본으로 반출되어 농민의 삶이 악화되었습니다."
+            android:textSize="16sp"
+            android:paddingBottom="16dp" />
+
+        <!-- 1930년대~1945년: 민족말살통치 -->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="1930~1945년 : 민족말살정책"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+
+        <TextView
+            android:id="@+id/era_1930s_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="황국신민화 정책: 창씨개명, 일본어 사용 및 신사참배를 강요당하였습니다.\n\n중일전쟁(1937년) 이후 전쟁 지원을 위한 징용·징병제와 강제 노역이 확대되었어요.\n\n독립운동: 김원봉의 의열단, 대한민국 임시정부(김구 주도), 광복군의 활약 등의 여러 독립운동의 시도가 있었습니다."
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/image_independence_army"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/gwangbok" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="한국광복군 성립 전례식 기념사진"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- 하단 여백 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메인으로 돌아가기"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:textColor="#272626" />
+
+    </LinearLayout>
+</ScrollView>
+

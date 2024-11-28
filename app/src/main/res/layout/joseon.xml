@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:background="#EEECE8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 조선이 시작된 이야기 -->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="조선이 시작된 이야기"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="조선은 1392년, 이성계라는 장군이 세운 나라입니다. 당시 고려는 몽골 침략과 내부 혼란으로 약해져 있었고, 이성계는 새로운 나라를 세워 조선을 건국했습니다. 조선의 수도는 한양으로 정해졌으며, 산과 강으로 둘러싸인 안정적인 지역이었습니다."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- 조선 지도 이미지 -->
+        <ImageView
+
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/josan1" />
+
+        <!-- 한글 창제 -->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="한글 창제"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="조선시대에는 세종대왕이 백성들을 위해 한글을 창제했습니다. 당시 사람들은 어려운 한자를 사용해야 했기에 글을 배우기 어려웠습니다. 그러나 1443년에 만들어진 훈민정음은 소리를 기반으로 하여 누구나 쉽게 배울 수 있는 문자였습니다."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- 훈민정음 이미지 -->
+        <ImageView
+
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/josan2" />
+
+        <!-- 나라를 지킨 영웅 -->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="나라를 지킨 영웅"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="조선시대에는 임진왜란과 같은 큰 전쟁이 있었습니다. 이순신 장군은 거북선을 만들어 일본군의 배를 무찌르고 조선을 지켰습니다."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- 거북선 이미지 -->
+        <ImageView
+
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/josan3" />
+
+        <!-- 조선의 과학과 문화 -->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="조선의 과학과 문화"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="조선시대에는 과학 기술도 발달했습니다. 앙부일구(해시계)와 혼천의(천체 관측기구) 등이 제작되어 백성들의 생활을 편리하게 했습니다."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- 과학 기구 이미지 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/josan4" />
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/josan5" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메인으로 돌아가기"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:textColor="#272626" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+

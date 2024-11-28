@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:background="#EEECE8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- 섹션: 대한제국 -->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="대한제국(1897~1910)"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+
+        <!-- 배경 -->
+        <TextView
+            android:id="@+id/background_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="배경"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/background_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1897년 고종은 조선을 대한제국으로 선포하고 황제에 즉위하였습니다. 이는 청나라 중심의 사대 외교에서 벗어나 자주 독립 국가임을 내세우기 위함이었습니다."
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/image_emperor"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/gojong" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="대한제국 고종 황제"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- 정치 -->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="정치"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+        <TextView
+            android:id="@+id/politics_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="광무개혁: 대한제국 정부는 황권 강화를 목표로 지계 발급(토지 소유권 증명), 근대적 군사제도 정비 등 개혁을 추진하였습니다.\n\n외교적 고립: 일본의 세력 확장 속에 열강의 이권침탈로 외교적 고립이 심화되었어요."
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <!-- 경제와 사회 -->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="경제와 사회"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+
+        <TextView
+            android:id="@+id/economy_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="근대적 기업 설립: 한성은행, 대한천일은행 등이 설립되었고, 경인선 등 철도가 개통되었습니다.\n\n신문과 교육: 《독립신문》과 《황성신문》 발간, 근대 학교인 한성사범학교가 설립되었어요."
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/image_newspaper"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/sinmoon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="황성신문"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- 몰락 -->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="몰락"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+
+        <TextView
+            android:id="@+id/collapse_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1905년 을사늑약 체결로 외교권을 박탈당하며 사실상 일본의 보호국이 되었고, 1910년 경술국치로 국권을 상실하였습니다."
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/image_collapse"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/usny" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="을사늑약 문서"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="16dp" />
+
+        <!-- 하단 여백 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메인으로 돌아가기"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:textColor="#272626" />
+
+    </LinearLayout>
+</ScrollView>
+

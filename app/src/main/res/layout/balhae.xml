@@ -1,0 +1,156 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#EEECE8"
+        android:gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="발해"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+
+        <!-- 발해의 건국 -->
+        <TextView
+            android:id="@+id/balhae_title"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="발해의 건국"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/balhae1" />
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:src="@drawable/balhae2"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/balhae_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:text="발해는 고구려가 멸망한 뒤인 698년, 고구려 유민이었던 대조영이 중국 동북 지역의 동모산에서 세운 나라예요. 대조영은 고구려의 마지막 장군이었던 대중상의 아들이라는 설도 있어요."
+            android:paddingBottom="16dp" />
+
+        <!-- 해동성국 발해 -->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="해동성국 발해, 번영의 시대"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/seven"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/balhae3" />
+
+            <ImageView
+                android:id="@+id/tomb"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:src="@drawable/balhae4"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/haedong_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:text="발해 문왕 때에는 정치와 문화, 경제가 크게 번성해 '해동성국'이라는 별명을 얻게 되었어요. 발해는 당나라, 일본, 거란 등 주변 나라들과 활발히 교류하며 무역으로 부를 쌓았답니다."
+            android:paddingBottom="16dp" />
+
+        <!-- 발해의 대표적인 문화재 -->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="발해의 대표적인 문화재 : 상경 용천부 궁궐터"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize='30dp' />
+
+        <ImageView
+            android:id="@+id/cultural_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/balhae5" />
+
+        <TextView
+            android:id="@+id/cultural_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:text="상경 용천부 궁궐터는 발해의 수도였던 상경 용천부에 위치한 궁궐터입니다. 발해는 당나라의 장안을 본떠 설계했으며, 발해 문화의 번영을 보여주는 대표적인 유적이에요."
+            android:paddingBottom="16dp"
+            android:textColor="#000000" />
+
+        <!-- 버튼 -->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메인으로 돌아가기"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:textColor="#272626" />
+
+    </LinearLayout>
+</ScrollView>
