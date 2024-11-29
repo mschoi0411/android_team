@@ -12,7 +12,7 @@
         android:id="@+id/quiz_main_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="메인 화면"
+        android:text="퀴즈 화면"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="#000"
@@ -57,6 +57,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="카드뒤집기"
+        android:textSize="18sp"
+        android:backgroundTint="#A1937E"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/quiz_start_stage5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="메인으로 돌아가기"
         android:textSize="18sp"
         android:backgroundTint="#A1937E"
         android:padding="12dp"

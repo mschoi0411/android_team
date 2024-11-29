@@ -10,16 +10,15 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <TextView
-            android:id="@+id/timer_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="시간을 흘러가게 할게요"
-            android:textColor="#000"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:paddingBottom="16dp" />
+        <!-- 타이머 텍스트 -->
+        <ProgressBar
+            android:id="@+id/timeProgressBar3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:progress="0"
+            android:max="100"
+            android:layout_alignParentTop="true" />
 
         <TextView
             android:layout_width="wrap_content"

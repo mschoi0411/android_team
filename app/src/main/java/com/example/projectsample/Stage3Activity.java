@@ -10,14 +10,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import android.widget.ProgressBar;
 
 public class Stage3Activity extends AppCompatActivity {
 
     private static final int[] CARD_IMAGES = {
-            R.drawable.seven, R.drawable.josan1,
-            R.drawable.korea4, R.drawable.josan2,
-            R.drawable.josan5, R.drawable.josan3,
-            R.drawable.card_image1, R.drawable.josan4
+            R.drawable.iron, R.drawable.goldencrown,
+            R.drawable.pottery, R.drawable.stoneblade,
+            R.drawable.korea2, R.drawable.korea3,
+            R.drawable.josan2, R.drawable.josan4
     };
 
     private ImageView firstCard = null;
@@ -26,6 +27,11 @@ public class Stage3Activity extends AppCompatActivity {
     private int secondCardImage = 0;
     private boolean isFlipping = false;
     private int matchedPairs = 0;
+    private ProgressBar timeProgressBar;
+    private Handler handler = new Handler();
+    private int progress = 0;
+    private static final int TIME_LIMIT = 100;
+    private boolean isGameComplete = false; // 게임 완료 상태 확인
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +47,34 @@ public class Stage3Activity extends AppCompatActivity {
             startActivity(intent);
             finish(); // Stage3Activity 종료
         });
+
+        timeProgressBar = findViewById(R.id.timeProgressBar3);
+
+        // ProgressBar 업데이트 (1초마다 실행)
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (progress < TIME_LIMIT && !isGameComplete) { // 게임 완료되지 않은 경우만 실행
+                    progress++;
+                    timeProgressBar.setProgress(progress);
+                    handler.postDelayed(this, 200); // 100ms마다 실행
+                } else if (!isGameComplete) { // 시간 초과 시 처리
+                    timeOut();
+                }
+            }
+        }, 100);
+    }
+
+    private void timeOut() {
+        if (isGameComplete) return; // 게임이 완료된 경우 시간 초과 처리 무시
+
+        // 시간 초과 메시지와 화면 이동
+        Toast.makeText(this, "아쉽네요~! 공부를 더 하고 와요~!", Toast.LENGTH_SHORT).show();
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(Stage3Activity.this, QuizMain.class);
+            startActivity(intent);
+            finish(); // Stage1Activity 종료
+        }, 2000); // 2초 대기 후 이동
     }
 
     private void setupCards() {
@@ -99,14 +133,14 @@ public class Stage3Activity extends AppCompatActivity {
         isFlipping = true;
 
         new Handler().postDelayed(() -> {
-            if (firstCardImage == R.drawable.seven && secondCardImage == R.drawable.josan1 ||
-                    firstCardImage == R.drawable.josan1 && secondCardImage == R.drawable.seven ||
-                    firstCardImage == R.drawable.josan5 && secondCardImage == R.drawable.josan2 ||
-                    firstCardImage == R.drawable.josan2 && secondCardImage == R.drawable.josan5 ||
-                    firstCardImage == R.drawable.card_image1 && secondCardImage == R.drawable.josan3 ||
-                    firstCardImage == R.drawable.josan3 && secondCardImage == R.drawable.card_image1 ||
-                    firstCardImage == R.drawable.korea4 && secondCardImage == R.drawable.josan4 ||
-                    firstCardImage == R.drawable.josan4 && secondCardImage == R.drawable.korea4) {
+            if (firstCardImage == R.drawable.iron && secondCardImage == R.drawable.goldencrown ||
+                    firstCardImage == R.drawable.goldencrown && secondCardImage == R.drawable.iron ||
+                    firstCardImage == R.drawable.pottery && secondCardImage == R.drawable.stoneblade ||
+                    firstCardImage == R.drawable.stoneblade && secondCardImage == R.drawable.pottery ||
+                    firstCardImage == R.drawable.korea2 && secondCardImage == R.drawable.korea3 ||
+                    firstCardImage == R.drawable.korea3 && secondCardImage == R.drawable.korea2 ||
+                    firstCardImage == R.drawable.josan2 && secondCardImage == R.drawable.josan4 ||
+                    firstCardImage == R.drawable.josan4 && secondCardImage == R.drawable.josan2) {
 
                 Toast.makeText(this, "짝이 맞았습니다!", Toast.LENGTH_SHORT).show();
                 firstCard.setEnabled(false);
@@ -114,6 +148,7 @@ public class Stage3Activity extends AppCompatActivity {
                 matchedPairs++;
 
                 if (matchedPairs == CARD_IMAGES.length / 2) {
+                    isGameComplete = true; // 게임 완료 상태 설정
                     Toast.makeText(this, "3단계를 성공했습니다!", Toast.LENGTH_SHORT).show();
                 }
             } else {
